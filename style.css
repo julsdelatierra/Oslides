@@ -1,0 +1,55 @@
+body{
+    font-family: sans-serif;
+    background: black;
+    text-align: center;
+    color: white;
+}
+
+#tools{
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    color: white;
+}
+
+.button{
+    margin-left: 10px;
+    padding: 10px;
+    border: 2px white solid;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -moz-transition-duration: 1s;
+    -webkit-transition-duration: 1s;
+    -o-transition-duration: 1s;
+}
+
+.button:hover{
+    background: white;
+    color: black;
+}
+
+h1{
+    font-size: 44pt;
+}
+
+h2{
+    font-size: 44pt;
+    margin-top: 25%;
+}
+
+p{
+    font-size: 32pt;
+}
+
+ul{
+    margin-left: 10px;
+    text-align: left;
+    font-size: 32pt;
+}
+
+h1, h2, p, ul{
+    -moz-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+}
