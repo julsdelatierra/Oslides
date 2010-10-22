@@ -5,6 +5,11 @@ body{
     color: white;
 }
 
+div{
+    -moz-transition-duration: 1s;
+    -moz-transform: scale(0);
+}
+
 #tools{
     position: absolute;
     right: 50px;
@@ -30,12 +35,11 @@ body{
 }
 
 h1{
-    font-size: 44pt;
+    font-size: 55pt;
 }
 
 h2{
     font-size: 44pt;
-    margin-top: 25%;
 }
 
 p{
@@ -46,10 +50,4 @@ ul{
     margin-left: 10px;
     text-align: left;
     font-size: 32pt;
-}
-
-h1, h2, p, ul{
-    -moz-transform: rotate(-3deg);
-    -webkit-transform: rotate(-3deg);
-    -o-transform: rotate(-3deg);
 }
