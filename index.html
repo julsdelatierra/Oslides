@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Programaci&oacute;n Open Web</title>
+    <title>Titulo de la conferencia</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="twitter.css" />
     <script type="application/javascript" src="script.js"></script>
 </head>
 <body onload="init();" onkeydown="keyDetect(event);">
-    <div style="display: block;">
+    <div class="slide index" style="display:block;">
         <img src="mozmex_gris.png" alt="" />
+        <script type="text/javascript">var CollectaWidget = {"path":"http://widget.collecta.com/widget.html?query=%40civt2010&alias=CIVT%202010&delay=1", "width":"200px", "height":"400px"};</script><script type="text/javascript" src="http://widget.collecta.com/collectawidget.js"></script>
     </div>
-    <div style="display:none;">
-        <h2>Titulo de la presentaci&oacute;n</h2>
+    <div class="slide" style="display:none;">
+        <h1 class="title">Titulo de la conferencia</h1>
     </div>
-    <div style="display:none;">
+    <div class="slide" style="display:none;">
         <h1>Titulo</h1>
         <p>Contenido</p>
     </div>
-    <div style="display:none;">
+    <div class="slide" style="display:none;">
         <h1>Titulo</h1>
         <ul>
             <li>Elemento 1</li>
@@ -24,13 +26,13 @@
             <li>Elemento 3</li>
         </ul>
     </div>
-    <div style="display:none;">
+    <div class="slide" style="display:none;">
         <h1>Contacto</h1>
         <p>Twitter</p>
         <p>Email</p>
         <p>Website</p>
     </div>
-    <span id="tools">
+    <span id="tools" style="display:none;">
         <label class="button" onclick="slideLeft();">Anterior</label> <label class="button" onclick="slideRight();">Siguiente</label>
     </span>
 </body>
