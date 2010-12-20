@@ -5,7 +5,7 @@ init = function(){
     var img = document.getElementsByTagName("img")[0];
     img.height = window.innerHeight-100;
     img.witdh = window.innerWidth-100;
-    slides = document.getElementsByTagName("div");
+    slides = document.querySelectorAll(".slide");
     actual = 0;
     slides[actual].style.MozTransform = "scale(1) rotate(360deg)";
 }
