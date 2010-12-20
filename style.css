@@ -5,39 +5,15 @@ body{
     color: white;
 }
 
-div{
-    width: 80%;
-    margin-left: 10%;
+.slide{
+    width: 90%;
+    margin: 0 auto;
     -moz-transition-duration: .5s;
     -webkit-transition-duration: .5s;
     -o-transition-duration: .5s;
-    -moz-transform: scale(0);
-    -webkit-transform: scale(0);
-    -o-transform: scale(0);
-}
-
-#tools{
-    position: absolute;
-    right: 50px;
-    bottom: 50px;
-    color: white;
-}
-
-.button{
-    margin-left: 10px;
-    padding: 10px;
-    border: 2px white solid;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -o-border-radius: 5px;
-    -moz-transition-duration: 1s;
-    -webkit-transition-duration: 1s;
-    -o-transition-duration: 1s;
-}
-
-.button:hover{
-    background: white;
-    color: black;
+    -moz-transform: scale(0) rotate(5deg);
+    -webkit-transform: scale(0) rotate(5deg);
+    -o-transform: scale(0) rotate(5deg);
 }
 
 h1{
@@ -76,22 +52,3 @@ a{
     color: white;
 }
 
-#transformer{
-    -moz-transition-duration: 1s;
-    -webkit-transition-duration: 1s;
-    -o-transition-duration: 1s;
-}
-
-#transformer:hover{
-    -moz-transform: rotate(-15deg);
-    -webkit-transform: rotate(-15deg);
-    -o-transform: rotate(-15deg);
-    color: yellow;
-    font-size: 40pt;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-span{
-    font-size: 30pt;
-}

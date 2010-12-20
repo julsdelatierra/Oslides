@@ -1,12 +1,13 @@
 var actual;
 var slides;
+
 init = function(){
     var img = document.getElementsByTagName("img")[0];
     img.height = window.innerHeight-100;
     img.witdh = window.innerWidth-100;
     slides = document.getElementsByTagName("div");
     actual = 0;
-    slides[actual].style.MozTransform = "scale(1)";
+    slides[actual].style.MozTransform = "scale(1) rotate(360deg)";
 }
 
 keyDetect = function(key){
@@ -20,12 +21,12 @@ keyDetect = function(key){
 
 apper = function(){
     setInterval(function(){
-        slides[actual].style.MozTransform = "scale(1)";
+        slides[actual].style.MozTransform = "scale(1) rotate(360deg)";
     },500);
 }
 
 disapper = function(){
-    slides[actual].style.MozTransform = "scale(0)";
+    slides[actual].style.MozTransform = "scale(0) rotate(10deg)";
 }
 
 slideRight = function(){
