@@ -8,6 +8,8 @@ init = function(){
     slides = document.querySelectorAll(".slide");
     actual = 0;
     slides[actual].style.MozTransform = "scale(1) rotate(360deg)";
+    slides[actual].style.WebkitTransform = "scale(1) rotate(360deg)";
+    slides[actual].style.OTransform = "scale(1) rotate(360deg)";
 }
 
 keyDetect = function(key){
@@ -22,11 +24,15 @@ keyDetect = function(key){
 apper = function(){
     setInterval(function(){
         slides[actual].style.MozTransform = "scale(1) rotate(360deg)";
+        slides[actual].style.WebkitTransform = "scale(1) rotate(360deg)";
+        slides[actual].style.OTransform = "scale(1) rotate(360deg)";
     },500);
 }
 
 disapper = function(){
     slides[actual].style.MozTransform = "scale(0) rotate(10deg)";
+    slides[actual].style.WebkitTransform = "scale(0) rotate(10deg)";
+    slides[actual].style.OTransform = "scale(0) rotate(10deg)";
 }
 
 slideRight = function(){
