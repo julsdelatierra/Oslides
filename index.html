@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
     <title>Titulo de la conferencia</title>
     <link rel="stylesheet" href="style.css" />
-    <script type="application/javascript" src="script.js"></script>
+    <script src="script.js"></script>
 </head>
 <body onload="init();" onkeydown="keyDetect(event);">
-    <div class="slide index" style="display:block;">
+    <section style="display:block;">
         <img src="mozmex_gris.png" alt="" />
-    </div>
-    <div class="slide" style="display:none;">
+    </section>
+    <section style="display:none;">
         <h1 class="title">Titulo de la conferencia</h1>
-    </div>
-    <div class="slide" style="display:none;">
+    </section>
+    <section style="display:none;">
         <h1>Titulo</h1>
         <p>Contenido</p>
-    </div>
-    <div class="slide" style="display:none;">
+    </section>
+    <section style="display:none;">
         <h1>Titulo</h1>
         <ul>
             <li>Elemento 1</li>
             <li>Elemento 2</li>
             <li>Elemento 3</li>
         </ul>
-    </div>
-    <div class="slide" style="display:none;">
+    </section>
+    <section style="display:none;">
         <h1>Contacto</h1>
         <p>Twitter</p>
         <p>Email</p>
         <p>Website</p>
-    </div>
+    </section>
     <span id="tools" style="display:none;">
         <label class="button" onclick="slideLeft();">Anterior</label> <label class="button" onclick="slideRight();">Siguiente</label>
     </span>

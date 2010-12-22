@@ -5,7 +5,7 @@ body{
     color: white;
 }
 
-.slide{
+section{
     width: 90%;
     margin: 0 auto;
     -moz-transition-duration: .5s;
