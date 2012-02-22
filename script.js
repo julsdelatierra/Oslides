@@ -1,15 +1,9 @@
-var actual;
+var actual = 0;
 var slides;
 
 init = function(){
-    var img = document.getElementsByTagName("img")[0];
-    img.height = window.innerHeight-100;
-    img.witdh = window.innerWidth-100;
     slides = document.getElementsByTagName("section");
-    actual = 0;
-    slides[actual].style.MozTransform = "scale(1) rotate(360deg)";
-    slides[actual].style.WebkitTransform = "scale(1) rotate(360deg)";
-    slides[actual].style.OTransform = "scale(1) rotate(360deg)";
+    apper();
 }
 
 keyDetect = function(key){
@@ -27,6 +21,10 @@ apper = function(){
         slides[actual].style.WebkitTransform = "scale(1) rotate(360deg)";
         slides[actual].style.OTransform = "scale(1) rotate(360deg)";
     },500);
+    bodyHeight = document.body.scrollHeight;
+    slideHeight = slides[actual].clientHeight;
+    marginTop = bodyHeight/2 - slideHeight/2;
+    slides[actual].style.marginTop = marginTop.toString()+'px';
 }
 
 disapper = function(){

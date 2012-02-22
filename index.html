@@ -3,33 +3,44 @@
 <head>
 	<meta charset="UTF-8">
     <title>Titulo de la conferencia</title>
+    <link href='http://fonts.googleapis.com/css?family=Signika+Negative' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
 </head>
 <body onload="init();" onkeydown="keyDetect(event);">
     <section style="display:block;">
-        <img src="mozmex_gris.png" alt="" />
+        <div class="container">
+            <img src="mozmex_gris.png" alt="" />
+        </div>
     </section>
     <section style="display:none;">
-        <h1 class="title">Titulo de la conferencia</h1>
+        <div class="container">
+            <h1 class="title">Titulo de la conferencia</h1>
+        </div>
     </section>
     <section style="display:none;">
-        <h1>Titulo</h1>
-        <p>Contenido</p>
+        <div class="container">
+            <h1>Titulo</h1>
+            <p>Contenido</p>
+        </div>
     </section>
     <section style="display:none;">
-        <h1>Titulo</h1>
-        <ul>
-            <li>Elemento 1</li>
-            <li>Elemento 2</li>
-            <li>Elemento 3</li>
-        </ul>
+        <div class="container">
+            <h1>Titulo</h1>
+            <ul>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+            </ul>
+        </div>
     </section>
     <section style="display:none;">
-        <h1>Contacto</h1>
-        <p>Twitter</p>
-        <p>Email</p>
-        <p>Website</p>
+        <div class="container">
+            <h1>Contacto</h1>
+            <p>Twitter</p>
+            <p>Email</p>
+            <p>Website</p>
+        </div>
     </section>
     <span id="tools" style="display:none;">
         <label class="button" onclick="slideLeft();">Anterior</label> <label class="button" onclick="slideRight();">Siguiente</label>

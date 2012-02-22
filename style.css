@@ -1,19 +1,34 @@
 body{
-    font-family: sans-serif;
+    font-family: 'Signika Negative', sans-serif;
     background: black;
     text-align: center;
     color: white;
 }
 
 section{
-    width: 90%;
-    margin: 0 auto;
     -moz-transition-duration: .5s;
     -webkit-transition-duration: .5s;
     -o-transition-duration: .5s;
     -moz-transform: scale(0) rotate(5deg);
     -webkit-transform: scale(0) rotate(5deg);
     -o-transform: scale(0) rotate(5deg);
+    display:table;
+    width:960px;
+    margin:0 auto;
+    height:100%;
+    background:none;
+}
+
+div.container{
+    display:table-cell;
+    vertical-align:middle;
+    background:none;
+    width:960px;
+}
+
+div.container img{
+    max-width:90%;
+    max-height:90%;
 }
 
 h1{
@@ -52,3 +67,12 @@ a{
     color: white;
 }
 
+p.center{
+    text-align:center;
+}
+p.left{
+    text-align:left;
+}
+p.right{
+    text-align:right;
+}
