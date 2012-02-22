@@ -9,9 +9,6 @@ section{
     -moz-transition-duration: .5s;
     -webkit-transition-duration: .5s;
     -o-transition-duration: .5s;
-    -moz-transform: scale(0) rotate(5deg);
-    -webkit-transform: scale(0) rotate(5deg);
-    -o-transform: scale(0) rotate(5deg);
     display:table;
     width:960px;
     margin:0 auto;
