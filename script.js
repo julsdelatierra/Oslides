@@ -1,26 +1,6 @@
 var actual = 0;
 var slides;
 
-/*
-var transitions = {
-    "twister" : {
-        "startPoint" : "scale(0) rotate(5deg)",
-        "incoming" : "scale(1) rotate(360deg)",
-        "outgoing" : "scale(0) rotate(5deg)",
-    },
-    "zoomIn" : {
-        "startPoint" : "scale(0) rotate(0deg)",
-        "incoming" : "scale(1) rotate(0deg)",
-        "outgoing" : "scale(0) rotate(0deg)",
-    },
-    "rightToLeft" : {
-        "startPoint" : "scale(100) rotate(0deg)",
-        "incoming" : "scale(1) rotate(0deg)",
-        "outgoing" : "scale(0) rotate(0deg)",
-    }
-}
-*/
-
 init = function(){
     slides = document.getElementsByTagName("section");
     appear();

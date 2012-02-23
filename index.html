@@ -9,12 +9,12 @@
     <script src="./script.js"></script>
 </head>
 <body onload="init();" onkeydown="keyDetect(event);">
-    <section style="display:none;" data-transition-in="twister">
+    <section style="display:none;" data-transition-in="fadeIn">
         <div class="container">
             <img src="mozmex_gris.png" alt="" />
         </div>
     </section>
-    <section style="display:none;" data-transition-in="zoomIn">
+    <section style="display:none;" data-transition-in="twister">
         <div class="container">
             <h1 class="title">Title</h1>
         </div>
@@ -43,6 +43,12 @@
             <p>Website</p>
         </div>
     </section>
+    
+    <section style="display:none;" data-transition-in="fadeIn">
+        <h1>Gracias!</h1>
+        <p>Fue un gusto estar con ustedes!!!!!</p>
+    </section>
+    
     <span id="tools" style="display:none;">
         <label class="button" onclick="slideLeft();">Prev</label> <label class="button" onclick="slideRight();">Next</label>
     </span>
