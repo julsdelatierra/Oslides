@@ -1,41 +1,13 @@
-Mozilla Mexico web template for slides
+Open web slides template (Oslides)
 
-To generate a new slides all you have to do is modify the index.html and style.css for content and look and feel.
-
-Transitions are in transitions.js and the core of animation are in script.js.
-
-for example:
-
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-    <title>Title</title>
-    <link href='http://fonts.googleapis.com/css?family=Signika+Negative' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="./style.css" />
-    <script src="./transitions.js"></script>
-    <script src="./script.js"></script>
-</head>
-<body onload="init();" onkeydown="keyDetect(event);">
-    <section style="display:none;" data-transition-in="twister">
-        <div class="container">
-            <img src="mozmex_gris.png" alt="" />
-        </div>
-    </section>
-    <section style="display:none;" data-transition-in="zoomIn">
-        <div class="container">
-            <h1 class="title">Title</h1>
-        </div>
-    </section>
-</body>
-</html>
-
-oslides just support right now to transitions:
+Oslides just support at the moment two transitions:
 
 * twister
 * zoomIn
 
-for add a new slide just need:
+To generate a new slide, all you have to do is modify the index.html for content and style.css for look and feel.
+
+for example if you want to add a new slide to the template just need add this to body:
 
 <section data-transition-in="transition">
     <div container>
@@ -43,3 +15,4 @@ for add a new slide just need:
     </div>
 </section>
 
+If you wanna hack, transitions are in transitions.js and the core of animation are in script.js.
