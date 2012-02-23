@@ -6,10 +6,10 @@ var twisterIn = function(slide){
     slide.style.OTransform = startPoint;
     slide.style.display = "";
     animation = setInterval(function(){
-        console.log(incoming);
         slide.style.MozTransform = incoming;
         slide.style.WebkitTransform = incoming;
         slide.style.OTransform = incoming;
+        slide.style.MSTransform = incoming;
     },500);
     slide.addEventListener("webkitTransitionEnd", function(){
       clearInterval(animation);
@@ -33,10 +33,10 @@ var zoomIn = function(slide){
     slide.style.OTransform = startPoint;
     slide.style.display = "";
     animation = setInterval(function(){
-        console.log(incoming);
         slide.style.MozTransform = incoming;
         slide.style.WebkitTransform = incoming;
         slide.style.OTransform = incoming;
+        slide.style.MSTransform = incoming;
     },500);
     slide.addEventListener("webkitTransitionEnd", function(){
       clearInterval(animation);
@@ -53,17 +53,33 @@ var zoomIn = function(slide){
 }
 
 var fadeIn = function(slide){
-    opacity = 0.0;
-    slide.style.opacity = opacity;
+    property = "opacity";
+    duration = "1s";
+    slide.style.transitionProperty = property;
+    slide.style.transitionDuration = duration;
+    slide.style.MozTransitionProperty = property;
+    slide.style.MozTransitionDuration = duration;
+    slide.style.WebkitTransitionProperty = property;
+    slide.style.WebkitTransitionDuration = duration;
+    slide.style.OTransitionProperty = property;
+    slide.style.OTransitionDuration = duration;
+    slide.style.opacity = 0;
     slide.style.display = "";
     animation = setInterval(function(){
-        console.log(opacity);
-        opacity+=0.1;
-        slide.style.opacity =  opacity;
-        if (opacity>=1.0) {
-            clearInterval(animation);
-        };
-    },100);
+        slide.style.opacity = 1;
+    },500);
+    slide.addEventListener("webkitTransitionEnd", function(){
+      clearInterval(animation);
+    }, true);
+    slide.addEventListener("transitionend", function(){
+      clearInterval(animation);
+    }, true);
+    slide.addEventListener("oTransitionEnd", function(){
+      clearInterval(animation);
+    }, true);
+    slide.addEventListener("MSTransitionEnd", function(){
+      clearInterval(animation);
+    }, true);
 }
 
 var transitions_in = {
