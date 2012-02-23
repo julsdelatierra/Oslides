@@ -1,9 +1,11 @@
 Open web slides template (Oslides)
 
-Oslides just support at the moment two transitions:
+Oslides just support at the moment four transitions:
 
 * twister
 * zoomIn
+* fadeIn
+* fallIn
 
 To generate a new slide, all you have to do is modify the index.html for content and style.css for look and feel.
 
